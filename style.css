@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 1.5rem;
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  min-height: 100vh;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.logotype {
+  font-size: 2rem;
+  color: white;
+  margin: 0 0 0.75rem 0;
+  text-shadow: 2px 2px #3081ed;
+}
+
+.slogan {
+  color: white;
+  margin: 0 0 1.5rem 0;
+}
+
+.cards {
+  max-width: 60rem;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.card {
+  background: linear-gradient(to top, #d3cce3, #e9e4f0);
+  border-radius: 0.75rem;
+  box-shadow: 0 .5rem 1rem -.125rem rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
+  color: #4a4a4a;
+  max-width: 100%;
+  position: relative;
+  padding: 1.5rem;
+  margin: 0.75rem;
+}
+
+path {
+  stroke-width: 3;
+}
+
+.linechart path {
+  stroke: url(#gradient);
+  stroke-width: 5;
+}
+
+.line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: grow 3s linear 1;
+  animation-fill-mode: forwards;
+}
+
+.linechart .line:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.linechart .line:nth-child(1) {
+  animation-delay: 1s;
+}
+
+@keyframes grow {
+  from {
+    stroke-dashoffset: 1000;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.title {
+  color: #555;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0.5rem 0 0 0;
+  text-transform: uppercase;
+}
+
+.percentage {
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+}
+
+.heading {
+  margin: 0.5rem 0 0 0;
+}
